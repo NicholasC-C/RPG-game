@@ -19,15 +19,15 @@ namespace RPG_game
         public void show_stats()
         {
             Console.WriteLine(@$"
-                    -- {name} the {character_type.ToString()} --
-                    -- Attributes --
-                    Strength:  {attributes.Strength}
-                    Intelligence:  {attributes.Intelligence}
-                    Wisdom:  {attributes.Wisdom}
-                    Dexterity:  {attributes.Dexterity}
-                    Constitution:  {attributes.Constitution}
-                    Charisma:  {attributes.Charisma}
-                    ----------------
+                        {name} the {character_type.ToString()}
+                        - Attributes ------------
+                        Strength:  {attributes.Strength}
+                        Intelligence:  {attributes.Intelligence}
+                        Wisdom:  {attributes.Wisdom}
+                        Dexterity:  {attributes.Dexterity}
+                        Constitution:  {attributes.Constitution}
+                        Charisma:  {attributes.Charisma}
+                        -------------------------
 
                     ");
         }
