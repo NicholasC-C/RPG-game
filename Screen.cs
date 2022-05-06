@@ -12,6 +12,7 @@ namespace RPG_game
         public int screenY { get; set; }
         public int screenWidth { get; set; }
         public int screenHeight { get; set; }
+        public string title { get; set; }
         protected char[,] grid;
         public Screen()
         {
@@ -24,11 +25,11 @@ namespace RPG_game
             {
                 for (int j = 0; j < grid.GetLength(1); j++)
                 {
-                    grid[i, j] = 't';
+                    grid[i, j] = ' ';
                 }
             }
         }
-        public void show()
+        public virtual void show()
         {
             draw_window();
         }
@@ -47,6 +48,8 @@ namespace RPG_game
 
         private void draw_screen_borders()
         {
+            Console.SetCursorPosition(screenX + 2, screenY - 2);
+            Console.Write(title);
             for (int i = 0; i <= screenWidth; i++)
             {
                 // Top bar

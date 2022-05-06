@@ -11,6 +11,9 @@ namespace RPG_game
     public class Character
     {
         public string name { get; set; }
+        public int x { get; set; }
+        public int y { get; set; }
+        public int xp { get; set; }
         public int level { get; set; }
         public CharacterType character_type { get; set; }
 

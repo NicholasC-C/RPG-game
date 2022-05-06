@@ -11,5 +11,10 @@ namespace RPG_game
         public CreationScreen() : base()
         {
         }
+
+        public override void show()
+        {
+            draw_window();
+        }
     }
 }

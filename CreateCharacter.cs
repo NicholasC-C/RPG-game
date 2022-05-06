@@ -19,6 +19,11 @@ namespace RPG_game
             character.character_type = choose_character_type();
             character.name = choose_name();
 
+            Random rand = new Random();
+
+            character.x = rand.Next(1, 40);
+            character.y = rand.Next(1, 13);
+
             return confirm_character(character);
         }
 
